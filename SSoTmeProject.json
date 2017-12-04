@@ -1,1 +1,299 @@
-{"SSoTmeProjectId":"109a3ca6-4391-4d84-9edc-68585ce5b4eb","Name":"ssotme-seed","RootPath":"C:\\Development\\ssotme-seed","ProjectSettings":[],"ProjectTranspilers":[{"MatchedTranspiler":{"TranspilerId":"b7720daf-03a1-4bae-8050-bf2456c5515f","AccountHolderId":"1e876e4f-d63b-4698-bd68-3bc27876e41e","Name":"TextToWordListXml","DisplayName":"Text To Word List Xml","Description":"Converts a textfile into a list of words with associated part of speech along with metrics on usage.","CreatedOn":"2017-11-16T23:21:04.413","IsActive":true,"CurrentRoutingKey":"","LowerName":"texttowordlistxml","UpperName":"TEXTTOWORDLISTXML","LowerHyphenName":"text-to-word-list-xml","InputFileTypeId":"6c58b9cb-e109-4273-a52b-c8a68f4009da","OutputFileTypeId":"f1b92a2a-3f83-4000-9b37-57f920e14419","UsageCount":230,"TranspileRequests":[],"TranspilerInstances":[],"TranspilerVersions":[{"TranspilerVersionId":"1d219691-5e2b-41e0-8047-ab9567520148","TranspilerId":"b7720daf-03a1-4bae-8050-bf2456c5515f","Name":"v1","CreatedOn":"2017-11-16T23:21:27.8","IsActive":true,"TranspilerFileTypeId_TranspilerInputHints":[],"TranspilerInstances":[],"ReplacedByTranspilerVersionId_TranspilerVersions":[]}]},"CLIHandler":null,"ProjectTranspilerId":"7dbe0eb6-613e-4805-85a7-83682220f3ed","Name":"TextToWordListXml","RelativePath":"/SSoT","CommandLine":"text-to-wordlist-xml -i .\\ProjectDescription.txt"},{"MatchedTranspiler":{"TranspilerId":"cc19e52e-80ec-4e78-8c98-9a7e84e9f2cd","Name":"WordlistXmlToRenamesCsv","DisplayName":"Wordlist Xml To Renames Csv","Description":"Converts a wordlist xml into a Renames.Csv file which can then be turned into an Odxml file.","CreatedOn":"2017-11-19T03:20:28.53","IsActive":true,"CurrentRoutingKey":"","LowerName":"wordlistxmltorenamescsv","UpperName":"WORDLISTXMLTORENAMESCSV","LowerHyphenName":"wordlist-xml-to-renames-csv","ReadMeMD":"Converts a wordlist xml created by the [codee42/text-to-wordlist-xml] tool into a Renames.Csv file which can then be turned into an Odxml file.","InputFileTypeId":"f1b92a2a-3f83-4000-9b37-57f920e14419","OutputFileTypeId":"2b02094e-3b80-4a07-8db2-0c2f38d44328","UsageCount":72,"TranspileRequests":[],"TranspilerInstances":[],"TranspilerVersions":[{"TranspilerVersionId":"f4b0facc-a212-4b5a-9bf0-b384baaa47d6","TranspilerId":"cc19e52e-80ec-4e78-8c98-9a7e84e9f2cd","Name":"v1","CreatedOn":"2017-11-19T03:20:30.253","IsActive":true,"TranspilerFileTypeId_TranspilerInputHints":[],"TranspilerInstances":[],"ReplacedByTranspilerVersionId_TranspilerVersions":[]}]},"CLIHandler":null,"ProjectTranspilerId":"fc5431b0-3a67-4fc6-86ce-922a8076f4ec","Name":"WordlistXmlToRenamesCsv","RelativePath":"/ODXML","CommandLine":"wordlist-xml-to-renames-csv -i ..\\SSoT\\ProjectDescription.txt.xml -i Renames.csv"},{"MatchedTranspiler":{"TranspilerId":"87be9a9d-8bbe-4564-b40b-a333ab58b807","AccountHolderId":"9aeb4f89-3c90-4972-927c-7deebfbb9de4","Name":"RenamesCSVToOdxml","DisplayName":"Renames C S V To Odxml","Description":"Convert a Renames CSV File into an Odxml file/","CreatedOn":"2017-11-18T21:40:21.607","IsActive":true,"CurrentRoutingKey":"amq.gen-Yz7fPo2hU98SRxnhf2vBMw","LowerName":"renamescsvtoodxml","UpperName":"RENAMESCSVTOODXML","LowerHyphenName":"renames-c-s-v-to-odxml","ReadMeMD":"Convert a Renames CSV File into an Odxml file using as many hints as are available.","InputDescriptionMD":"The input CSV can have\r\nFromName (object | object.property)\r\nToName (object | property)\r\nParentName\r\nInclude (true | false)\r\nDescription\r\nDataType\r\nDataLength\r\n","InputFileTypeId":"2b02094e-3b80-4a07-8db2-0c2f38d44328","OutputFileTypeId":"33de424c-cfe0-498e-ae70-44da375a8fb2","UsageCount":151,"TranspileRequests":[],"TranspilerInstances":[],"TranspilerVersions":[{"TranspilerVersionId":"78de1b37-cc0b-44c6-ba27-677af973620e","TranspilerId":"87be9a9d-8bbe-4564-b40b-a333ab58b807","Name":"v1","CreatedOn":"2017-11-18T21:43:34.36","IsActive":true,"TranspilerFileTypeId_TranspilerInputHints":[],"TranspilerInstances":[],"ReplacedByTranspilerVersionId_TranspilerVersions":[]}]},"CLIHandler":null,"ProjectTranspilerId":"e22ecc80-217b-4c99-8b6c-f32cbdb51f2e","Name":"RenamesCSVToOdxml","RelativePath":"/ODXML","CommandLine":"odxml42/renames-csv-to-odxml -i .\\Renames.csv"},{"MatchedTranspiler":{"TranspilerId":"8defe7a3-89cf-4989-b679-d9226519f622","AccountHolderId":"9aeb4f89-3c90-4972-927c-7deebfbb9de4","Name":"OdxmlToNodeJSDocs","DisplayName":"Odxml To Node J S Docs","Description":"Creates easy to read/navigate html documentation for an Odxml Schema.","CreatedOn":"2017-08-29T21:18:01.293","IsActive":true,"CurrentRoutingKey":"amq.gen-wTPCixlNexS-dMsS8SN9Xg","LowerName":"odxmltonodejsdocs","UpperName":"ODXMLTONODEJSDOCS","LowerHyphenName":"odxml-to-node-j-s-docs","ReadMeMD":"Examines the schema defined by an Odxml file and creates an interactive DataModel explorer for exploring the structure of the data model defined. \r\n\r\nCreates both a single page version of the docs, as well as a Node.JS website that can be started on demand to explore the data model more interactively.","InputFileTypeId":"33de424c-cfe0-498e-ae70-44da375a8fb2","OutputFileTypeId":"d8fc84b7-442d-4c7a-92a0-eefc11391934","UsageCount":436,"Category":"documentation","IsRecommended":true,"TranspileRequests":[],"TranspilerInstances":[],"TranspilerVersions":[{"TranspilerVersionId":"26af4ad8-fb5d-4027-8e4b-2260c62f3f24","TranspilerId":"8defe7a3-89cf-4989-b679-d9226519f622","Name":"v1","CreatedOn":"2017-08-29T21:18:03.463","IsActive":true,"TranspilerFileTypeId_TranspilerInputHints":[],"TranspilerInstances":[],"ReplacedByTranspilerVersionId_TranspilerVersions":[]}]},"CLIHandler":null,"ProjectTranspilerId":"37fbd3d2-b5e6-45a3-8c7a-b3823d0c7960","Name":"OdxmlToNodeJSDocs","RelativePath":"/Docs","CommandLine":"odxml42/odxml-to-nodejs-docs -i ..\\ODXML\\DataSchema.odxml"}]}
+{
+  "SSoTmeProjectId": "109a3ca6-4391-4d84-9edc-68585ce5b4eb",
+  "Name": "ssotme-seed",
+  "RootPath": "C:\\Development\\ssotme-seed",
+  "ProjectSettings": [
+    {
+      "ProjectSettingId": "ee88e3a6-7db9-4c07-bfd1-7b987f40fab4",
+      "Name": "project-name",
+      "Value": "ssotme-seed"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "b7720daf-03a1-4bae-8050-bf2456c5515f",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "TextToWordListXml",
+        "DisplayName": "Text To Word List Xml",
+        "Description": "Converts a textfile into a list of words with associated part of speech along with metrics on usage.",
+        "CreatedOn": "2017-11-16T23:21:04.413",
+        "IsActive": true,
+        "CurrentRoutingKey": "",
+        "LowerName": "texttowordlistxml",
+        "UpperName": "TEXTTOWORDLISTXML",
+        "LowerHyphenName": "text-to-word-list-xml",
+        "InputFileTypeId": "6c58b9cb-e109-4273-a52b-c8a68f4009da",
+        "OutputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "UsageCount": 722,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "1d219691-5e2b-41e0-8047-ab9567520148",
+            "TranspilerId": "b7720daf-03a1-4bae-8050-bf2456c5515f",
+            "Name": "v1",
+            "CreatedOn": "2017-11-16T23:21:27.8",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "7dbe0eb6-613e-4805-85a7-83682220f3ed",
+      "Name": "TextToWordListXml",
+      "RelativePath": "/SSoT",
+      "CommandLine": "text-to-wordlist-xml -i .\\ProjectDescription.txt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "cc19e52e-80ec-4e78-8c98-9a7e84e9f2cd",
+        "Name": "WordlistXmlToRenamesCsv",
+        "DisplayName": "Wordlist Xml To Renames Csv",
+        "Description": "Converts a wordlist xml into a Renames.Csv file which can then be turned into an Odxml file.",
+        "CreatedOn": "2017-11-19T03:20:28.53",
+        "IsActive": true,
+        "CurrentRoutingKey": "",
+        "LowerName": "wordlistxmltorenamescsv",
+        "UpperName": "WORDLISTXMLTORENAMESCSV",
+        "LowerHyphenName": "wordlist-xml-to-renames-csv",
+        "ReadMeMD": "Converts a wordlist xml created by the [codee42/text-to-wordlist-xml] tool into a Renames.Csv file which can then be turned into an Odxml file.",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "2b02094e-3b80-4a07-8db2-0c2f38d44328",
+        "UsageCount": 547,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "f4b0facc-a212-4b5a-9bf0-b384baaa47d6",
+            "TranspilerId": "cc19e52e-80ec-4e78-8c98-9a7e84e9f2cd",
+            "Name": "v1",
+            "CreatedOn": "2017-11-19T03:20:30.253",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "fc5431b0-3a67-4fc6-86ce-922a8076f4ec",
+      "Name": "WordlistXmlToRenamesCsv",
+      "RelativePath": "/ODXML",
+      "CommandLine": "wordlist-xml-to-renames-csv -i ..\\SSoT\\ProjectDescription.txt.xml -i Renames.csv"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "87be9a9d-8bbe-4564-b40b-a333ab58b807",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "RenamesCSVToOdxml",
+        "DisplayName": "Renames C S V To Odxml",
+        "Description": "Convert a Renames CSV File into an Odxml file/",
+        "CreatedOn": "2017-11-18T21:40:21.607",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-b3HnVuWdBsmMQQBhyNEfgg",
+        "LowerName": "renamescsvtoodxml",
+        "UpperName": "RENAMESCSVTOODXML",
+        "LowerHyphenName": "renames-c-s-v-to-odxml",
+        "ReadMeMD": "Convert a Renames CSV File into an Odxml file using as many hints as are available.",
+        "InputDescriptionMD": "The input CSV can have\r\nFromName (object | object.property)\r\nToName (object | property)\r\nParentName\r\nInclude (true | false)\r\nDescription\r\nDataType\r\nDataLength\r\n",
+        "InputFileTypeId": "2b02094e-3b80-4a07-8db2-0c2f38d44328",
+        "OutputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "UsageCount": 625,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "78de1b37-cc0b-44c6-ba27-677af973620e",
+            "TranspilerId": "87be9a9d-8bbe-4564-b40b-a333ab58b807",
+            "Name": "v1",
+            "CreatedOn": "2017-11-18T21:43:34.36",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "e22ecc80-217b-4c99-8b6c-f32cbdb51f2e",
+      "Name": "RenamesCSVToOdxml",
+      "RelativePath": "/ODXML",
+      "CommandLine": "odxml42/renames-csv-to-odxml -i .\\Renames.csv"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "OdxmlToNodeJSDocs",
+        "DisplayName": "Odxml To Node J S Docs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema.",
+        "CreatedOn": "2017-08-29T21:18:01.293",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-038mgzT3ATTpDx-Ekoww0w",
+        "LowerName": "odxmltonodejsdocs",
+        "UpperName": "ODXMLTONODEJSDOCS",
+        "LowerHyphenName": "odxml-to-node-j-s-docs",
+        "ReadMeMD": "Examines the schema defined by an Odxml file and creates an interactive DataModel explorer for exploring the structure of the data model defined. \r\n\r\nCreates both a single page version of the docs, as well as a Node.JS website that can be started on demand to explore the data model more interactively.",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
+        "UsageCount": 947,
+        "Category": "documentation",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "26af4ad8-fb5d-4027-8e4b-2260c62f3f24",
+            "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+            "Name": "v1",
+            "CreatedOn": "2017-08-29T21:18:03.463",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "37fbd3d2-b5e6-45a3-8c7a-b3823d0c7960",
+      "Name": "OdxmlToNodeJSDocs",
+      "RelativePath": "/Docs/Schema",
+      "CommandLine": "odxml42/odxml-to-nodejs-docs -i ..\\..\\ODXML\\DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "XmlXsltTransform",
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-pwRUdyqwEq8fPN8gkK7ADg",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "UsageCount": 4466,
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "20d337a5-9f0e-4319-9528-10e27980ee34",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/docs",
+      "CommandLine": "xml-xslt-transform ..\\ODXML\\DataSchema.odxml -i CreateSeedDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": null,
+      "CLIHandler": null,
+      "ProjectTranspilerId": "78ffdedc-a32d-4ddb-9745-bd9f736f3b37",
+      "Name": "LocalCommand",
+      "RelativePath": "/DSPXml",
+      "CommandLine": "-checkresults"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "bbeadea3-75c7-449a-9aaa-22e2b29c2ed7",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "SPXmlToDetailedSPXml",
+        "DisplayName": "S P Xml To Detailed S P Xml",
+        "Description": "Converts a SSoTmeProject.xml file into a Detailed SPXml file.",
+        "CreatedOn": "2017-10-14T22:26:12.277",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-jWBa32Jd3OAy32tcP7I0iA",
+        "LowerName": "spxmltodetailedspxml",
+        "UpperName": "SPXMLTODETAILEDSPXML",
+        "LowerHyphenName": "s-p-xml-to-detailed-s-p-xml",
+        "ReadMeMD": "Essentially - this gathers META DATA about the files involved in each of the transpile operations (input & output), and combines it all together into a single file.  Subsequent tools can then create (for example) documentation of this process.  This tool just gathers the information together.\r\n\r\nIt also includes the meta data about all of the files types (as a snapshot at the point in time that this tool is run) authoritatively from SSoT.me.\r\n\r\nThe command ssotme -createDocs automatically installs this tool, plus the tool which converts the DSPxml file into a more helpful Html document.",
+        "InputDescriptionMD": "A SSoTmeProject.json file - which is read locally by the Open Source SSoT.me CLI tools.  ",
+        "OutputDescriptionMD": "Based on this file, and by examining the .zfs files throughout the project, a picture of the build process is rebuilt (without any of the content of the input/output files) - and a single, unified picture of the project is developed - a Detailed SPXml file.",
+        "ExampleMD": "ssotme -createDocs",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "UsageCount": 448,
+        "Category": "ssotme",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "28cf2294-48c9-41df-838a-08519b75d3c3",
+            "TranspilerId": "bbeadea3-75c7-449a-9aaa-22e2b29c2ed7",
+            "Name": "v1",
+            "CreatedOn": "2017-10-14T22:26:22.67",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "3f642913-21b1-4883-9443-f328899af3d3",
+      "Name": "SPXmlToDetailedSPXml",
+      "RelativePath": "/DSPXml",
+      "CommandLine": "spxml-to-detailed-spxml -i .\\SSoTmeProject.spxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "06876a87-a56c-4c75-a01f-377e97deed7a",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "DetailedSPXmlToHtmlDocs",
+        "DisplayName": "Detailed S P Xml To Html Docs",
+        "Description": "Detailed S P Xml To Html Docs",
+        "CreatedOn": "2017-10-14T22:05:54.85",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-oEpCrG1TUS34T1e-TSjftA",
+        "LowerName": "detailedspxmltohtmldocs",
+        "UpperName": "DETAILEDSPXMLTOHTMLDOCS",
+        "LowerHyphenName": "detailed-s-p-xml-to-html-docs",
+        "ReadMeMD": "This system tool turns a detailed SPXml file into detailed Html Documentation about how the SSoT.me project is organized. Specifically, how does the tech \"flow\" thorugh the project. ",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
+        "UsageCount": 395,
+        "Category": "ssotme",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "59b27e72-9f6d-4f13-b246-69afadb78106",
+            "TranspilerId": "06876a87-a56c-4c75-a01f-377e97deed7a",
+            "Name": "v1",
+            "CreatedOn": "2017-10-14T22:05:59.07",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "cd427f1a-e4a9-4d42-afc2-890541895e70",
+      "Name": "DetailedSPXmlToHtmlDocs",
+      "RelativePath": "/docs/DSPXml",
+      "CommandLine": "detailed-spxml-to-html-docs -i ..\\..\\DSPXml\\SSoTmeProject.dspxml"
+    }
+  ]
+}

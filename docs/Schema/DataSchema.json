@@ -1,0 +1,13 @@
+
+{
+  "Ontology": {
+    "Name": "ssotme-seed",
+    "OntologyGroups": {
+      "OntologyGroup": {
+        "Name": "dbo",
+        "ObjectDefs": ""
+      }
+    }
+  }
+}
+                    
