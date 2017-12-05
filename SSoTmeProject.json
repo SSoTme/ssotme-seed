@@ -139,7 +139,7 @@
         "ReadMeMD": "Examines the schema defined by an Odxml file and creates an interactive DataModel explorer for exploring the structure of the data model defined. \r\n\r\nCreates both a single page version of the docs, as well as a Node.JS website that can be started on demand to explore the data model more interactively.",
         "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
         "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
-        "UsageCount": 947,
+        "UsageCount": 1022,
         "Category": "documentation",
         "IsRecommended": true,
         "TranspileRequests": [],
@@ -162,49 +162,6 @@
       "Name": "OdxmlToNodeJSDocs",
       "RelativePath": "/Docs/Schema",
       "CommandLine": "odxml42/odxml-to-nodejs-docs -i ..\\..\\ODXML\\DataSchema.odxml"
-    },
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
-        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
-        "Name": "XmlXsltTransform",
-        "DisplayName": "Xml Xslt Transform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
-        "CreatedOn": "2017-08-30T15:45:09.907",
-        "IsActive": true,
-        "CurrentRoutingKey": "amq.gen-pwRUdyqwEq8fPN8gkK7ADg",
-        "LowerName": "xmlxslttransform",
-        "UpperName": "XMLXSLTTRANSFORM",
-        "LowerHyphenName": "xml-xslt-transform",
-        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
-        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
-        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
-        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
-        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
-        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
-        "UsageCount": 4466,
-        "Category": "type-conversion",
-        "IsRecommended": true,
-        "TranspileRequests": [],
-        "TranspilerInstances": [],
-        "TranspilerVersions": [
-          {
-            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
-            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
-            "Name": "v1",
-            "CreatedOn": "2017-08-30T15:45:10.653",
-            "IsActive": true,
-            "TranspilerFileTypeId_TranspilerInputHints": [],
-            "TranspilerInstances": [],
-            "ReplacedByTranspilerVersionId_TranspilerVersions": []
-          }
-        ]
-      },
-      "CLIHandler": null,
-      "ProjectTranspilerId": "20d337a5-9f0e-4319-9528-10e27980ee34",
-      "Name": "XmlXsltTransform",
-      "RelativePath": "/docs",
-      "CommandLine": "xml-xslt-transform ..\\ODXML\\DataSchema.odxml -i CreateSeedDocs.xslt"
     },
     {
       "MatchedTranspiler": null,
@@ -272,7 +229,7 @@
         "ReadMeMD": "This system tool turns a detailed SPXml file into detailed Html Documentation about how the SSoT.me project is organized. Specifically, how does the tech \"flow\" thorugh the project. ",
         "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
         "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
-        "UsageCount": 395,
+        "UsageCount": 423,
         "Category": "ssotme",
         "TranspileRequests": [],
         "TranspilerInstances": [],
@@ -294,6 +251,86 @@
       "Name": "DetailedSPXmlToHtmlDocs",
       "RelativePath": "/docs/DSPXml",
       "CommandLine": "detailed-spxml-to-html-docs -i ..\\..\\DSPXml\\SSoTmeProject.dspxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "c3ba6d7c-e442-4c51-8a78-8ba05f7578a0",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "TextToXmlLines",
+        "DisplayName": "Text To Xml Lines",
+        "Description": "Takes a text file and turns it into an xml file with with 1 <Line> for each line of text.",
+        "CreatedOn": "2017-11-16T23:20:49.357",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-yRqSQDLayysrMcUIkmHcqw",
+        "LowerName": "texttoxmllines",
+        "UpperName": "TEXTTOXMLLINES",
+        "LowerHyphenName": "text-to-xml-lines",
+        "InputFileTypeId": "6c58b9cb-e109-4273-a52b-c8a68f4009da",
+        "OutputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "UsageCount": 19,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "3f68ea33-8367-4049-b27a-3413b92622bd",
+            "TranspilerId": "c3ba6d7c-e442-4c51-8a78-8ba05f7578a0",
+            "Name": "v1",
+            "CreatedOn": "2017-11-16T23:21:27.843",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "9a6c1627-57b5-4f69-a3af-14e9913062b5",
+      "Name": "TextToXmlLines",
+      "RelativePath": "/docs",
+      "CommandLine": "text-to-xml-lines -i ..\\SSoT\\ProjectDescription.txt -o .\\project-lines.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "XmlXsltTransform",
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-pwRUdyqwEq8fPN8gkK7ADg",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "UsageCount": 4561,
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "20d337a5-9f0e-4319-9528-10e27980ee34",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/docs",
+      "CommandLine": "xml-xslt-transform ..\\ODXML\\DataSchema.odxml -i CreateSeedDocs.xslt -i project-lines.xml"
     }
   ]
 }

@@ -1,6 +1,5 @@
 # ssotme-seed Docs
-
-This is the derived documentation.  
+Edit the `/SSoT/ProjectDescription.txt` file to provide a description for your project.
 
 ## SSoT.me Project Summary
 
